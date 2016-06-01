@@ -7,7 +7,7 @@ Please make sure your machine has been properly set up to use Python and require
 This guide assumes you have successfully registered your account on the [B2SHARE website](https://trng-b2share.eudat.eu) using your institutional credentials or social ID through B2ACCESS. In addition, the loading of the token, importing Python packages and checking request responses will not be covered here.
 
 ### Retrieve a paginated listing
-As shown in the submodule '[Getting your API token](00_Getting_your_API_token.md)' all existing records can easily be retrieved using a single request:
+As shown in the previous '[Getting your API token](00_Getting_your_API_token.md)' all existing records can easily be retrieved using a single 'GET' 'requests' request:
 
 ```python
 >>> r = requests.get('https://trng-b2share.eudat.eu/api/records', params={'access_token': token}, verify=False)
